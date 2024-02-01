@@ -1,4 +1,5 @@
-const express = require('express')
+const express = require('express');
+const recommendation = require('../api/recommendation/recommendationService');
 
 module.exports = function (server) {
     const protectedApi = express.Router();
@@ -16,3 +17,4 @@ module.exports = function (server) {
 
     server.use(express.static(require('path').join(__dirname, '../public')));
 }
+127.0.0.1:3000/api/recommendation
